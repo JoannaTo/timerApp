@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+/* body {
+  background-image: url("../src/imgs/lala.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ */
+body {
+  background-color: #0b0111; /* #000519 */
+  color: white;
+  font-family: "Roboto", sans-serif;
+}

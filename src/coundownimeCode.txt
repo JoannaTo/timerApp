@@ -1,0 +1,21 @@
+var countDownDate = new Date(this.month + " "+ this.day + ", " +this.year + " " + this.timeHours + ":" + this.timeMins + ":" + this.timeSecs).getTime();
+    console.log(countDownDate);
+       this.x = setInterval( ()=> {
+      var now = new Date().getTime();
+      this.distance = countDownDate - 60;
+    
+      /* var days = Math.floor(distance / (1000 * 60 * 60 * 24)); */
+    var hours = Math.floor((this.distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    
+    var minutes = Math.floor((this.distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((this.distance % (1000 * 60)) / 1000);
+   /*  this.days=days; */
+   
+    this.minutes=minutes;
+    this.hours=hours;
+    this.seconds=seconds;
+    if (this.distance < 0) {
+      clearInterval(this.x);
+      console.log("expired");
+    }    
+    },1000 );
