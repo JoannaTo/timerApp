@@ -1,0 +1,59 @@
+.wrapper {
+  /* background-image: url("../../imgs/freeimg_39732256freejpg850.jpg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 58rem;
+}
+input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid #c126a0;
+  width: 27rem;
+  padding-left: 13px;
+  margin-bottom: 1rem;
+}
+.clock {
+  font-size: 10rem;
+}
+
+input[type="number"] {
+  border: none;
+  background: transparent;
+  color: white;
+  width: 15rem;
+  text-align: center;
+  font-size: 10rem;
+}
+.overlayDiv {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  input[type="number"] {
+    width: auto !important;
+    font-size: small !important;
+  }
+  input[type="text"] {
+    width: 10rem;
+  }
+}

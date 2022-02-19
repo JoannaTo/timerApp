@@ -1,0 +1,41 @@
+<div
+  class="wrapper"
+  [ngStyle]="{ 'background-image': 'url(' + actualImage + ')' }"
+>
+  <div class="container-fluid h-100 overlayDiv">
+    <div class="row h-100">
+      <div
+        class="col-sm-12 d-flex flex-column justify-content-center align-items-center"
+      >
+        <input
+          type="text"
+          placeholder="name of your task"
+          (keydown.enter)="onEnterPress($event)"
+        />
+        <h3 class="text-uppercase my-5" *ngIf="nameOfTask; else smth">
+          Your doing right now: {{ nameOfTask }}
+        </h3>
+        <ng-template #smth>Please,enter name of your task</ng-template>
+        <div class="inputForNums mb-3 mt-3">
+          <input type="number" [(ngModel)]="timeHours" />
+          <input type="number" [(ngModel)]="timeMins" />
+          <input type="number" [(ngModel)]="timeSecs" />
+        </div>
+
+        <!--    <div class="clock mb-5">
+          
+          <span class="days"> {{ timeHours }} : </span>
+          <span class="days">{{ timeMins }} : </span>
+          <span class="days">{{ timeSecs }} </span>
+        </div> -->
+        <div class="btn-stop">
+          <app-btn [text]="'start'" (click)="startCounting()"></app-btn>
+          <app-btn [text]="'stop'" (click)="stopCounting()"></app-btn>
+          <app-btn [text]="'restart'" (click)="restartCounting()"></app-btn>
+        </div>
+      </div>
+    </div>
+    <div class="planet roll-in-blurred-left" alt=""></div>
+    <div class="planetTwo rotate-center" alt=""></div>
+  </div>
+</div>

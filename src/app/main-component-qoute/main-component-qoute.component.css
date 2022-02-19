@@ -1,0 +1,65 @@
+.custom-hr {
+  height: 2px;
+  width: 4rem;
+  background-color: #2b0833;
+  opacity: 1;
+}
+.quote-inner {
+  width: 37rem;
+}
+i {
+  color: #d91699;
+}
+main {
+  height: 50rem;
+}
+
+.landing-page-img {
+  background-image: url("../../imgs/website-support-vector-illustration-5de193d48a370.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 77%;
+  height: 56%;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+.little-circle {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 99999999;
+  transition: all ease 1s !important;
+}
+.hoverEffect {
+  top: 40%;
+  animation: hideshow 10s ease infinite;
+}
+@keyframes hideshow {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.second-circle {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  z-index: 99999999;
+  transition: all ease 1s !important;
+}
+.hoverEffectTwo {
+  top: 30%;
+  animation: hideshow 10s ease infinite;
+}

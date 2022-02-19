@@ -1,0 +1,22 @@
+<app-heading-component></app-heading-component>
+<main>
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div
+        class="col-sm-6 quote-section d-flex flex-column justify-content-center align-items-center"
+      >
+        <h4 class="text-uppercase">organize yourself.</h4>
+        <hr class="custom-hr mb-5" />
+        <p class="text-uppercase mb-5">today's powerful quote</p>
+        <div class="quote-inner d-flex flex-row justify-content-center">
+          <i class="fas fa-quote-left mx-3"></i>
+          <app-single-quote></app-single-quote>
+        </div>
+        <app-btn [text]="'let t start'" (btnClicked)="btnIsClicked()"></app-btn>
+      </div>
+      <div class="col-sm-6 img-section d-flex align-items-center">
+        <div class="landing-page-img d-flex"></div>
+      </div>
+    </div>
+  </div>
+</main>
