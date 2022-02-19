@@ -9,7 +9,6 @@ import { TimerComponentComponent } from './timer-component/timer-component.compo
 import { SingleQuoteComponent } from './quote/single-quote/single-quote.component';
 import { QuotesService } from './quotes.service';
 import { BtnComponent } from './btn/btn.component';
-import { DusanBtnComponent } from './dusan-btn/dusan-btn.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -20,14 +19,9 @@ import { FormsModule } from '@angular/forms';
     TimerComponentComponent,
     SingleQuoteComponent,
     BtnComponent,
-    DusanBtnComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [QuotesService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
